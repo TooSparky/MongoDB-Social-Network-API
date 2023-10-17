@@ -1,0 +1,18 @@
+{
+  "name": "mongodb-social-network-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed",
+    "heroku-postbuild": "node utils/seed.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "mongoose": "^7.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
