@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-import { isEmail } from 'validator';
+const { isEmail } = require('validator');
 
 const userSchema = new Schema(
     {
