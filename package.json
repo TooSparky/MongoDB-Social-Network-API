@@ -10,7 +10,7 @@
     "heroku-postbuild": "node utils/seed.js"
   },
   "dependencies": {
-    "express": "4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^7.0.2"
   },
   "author": "",

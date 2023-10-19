@@ -12,7 +12,6 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now(),
-            // format timestamp on query??
             get: () => new Date(),
         },
         username: {
@@ -28,6 +27,10 @@ const thoughtSchema = new Schema(
         id: false,
     }
 );
+
+thoughtSchema.virtual('reactionCount').get(function () {
+    return this.reactions.length;
+});
 
 const Thought = model('thought', thoughtSchema);
 
